@@ -1,0 +1,23 @@
+{
+  "name": "08august",
+  "version": "1.0.0",
+  "description": "home_work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valKovbasiuk/08august.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valKovbasiuk/08august/issues"
+  },
+  "homepage": "https://github.com/valKovbasiuk/08august#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
