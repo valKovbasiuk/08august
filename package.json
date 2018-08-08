@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/valKovbasiuk/08august#readme",
   "devDependencies": {
+<<<<<<< HEAD
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
+=======
+    "gulp": "^3.9.1"
+>>>>>>> 2ac4ce8e6a99846de01b8fb0cdb6b5e8adb669b4
   }
 }
