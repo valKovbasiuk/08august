@@ -6,7 +6,23 @@
 body {
   color: blue; }
 
+.flex {
+  display: flex; }
+
+.grid {
+  display: grid; }
+
 body {
   margin: 0;
   padding: 0;
   font-size: 20px; }
+
+div.svg {
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+  background-color: green; }
+
+.svg div.svg {
+  background-color: none;
+  background-image: url("../img/apple-alt-solid.svg"); }
