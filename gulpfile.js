@@ -10,18 +10,25 @@ gulp.task("sass", function() {
     .pipe(sass()
     .on("error", sass.logError)
   )
-    .pipe(gulp.dest("./app/css"));
+    .pipe(gulp.dest("./app/css"))
+    .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task("browserSync", function() {
-  browserSync({
+gulp.task("serv", function() {
+  browserSync.init({
     server: {
-      baseDir: "app"
+      baseDir: "./app"
     },
     notify: false
-  })
+  });
+  browserSync.watch("./app", browserSync.reload);
 });
 
-gulp.task('default', function() {
-  gulp.watch('./dev/sass/**/*.scss', gulp.series('sass'));
-})
+gulp.task('watch', function() {
+  gulp.watch('./dev/sass/**/*.scss', gulp.series('sass'))
+});
+
+gulp.task('default', gulp.series(
+  gulp.parallel('sass'),
+  gulp.parallel('watch', 'serv')
+));

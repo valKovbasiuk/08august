@@ -4,8 +4,9 @@
   margin: 0; }
 
 body {
-  color: red; }
+  color: blue; }
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 20px; }
