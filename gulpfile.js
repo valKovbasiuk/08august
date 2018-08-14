@@ -2,17 +2,26 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+var browserSync = require("browser-sync");
 
 gulp.task("sass", function() {
   return gulp
-    .src("./sass/**/*.scss")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("./css"));
+    .src("./dev/sass/**/*.scss")
+    .pipe(sass()
+    .on("error", sass.logError)
+  )
+    .pipe(gulp.dest("./app/css"));
 });
 
-gulp.task('default', function(){
-  // watch me getting Sassy
-  gulp.watch("./sass/**/*.scss", function(event){
-    gulp.run('sass');
-  });
+gulp.task("browserSync", function() {
+  browserSync({
+    server: {
+      baseDir: "app"
+    },
+    notify: false
+  })
 });
+
+gulp.task('default', function() {
+  gulp.watch('./dev/sass/**/*.scss', gulp.series('sass'));
+})
