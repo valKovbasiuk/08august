@@ -1,4 +1,8 @@
-# 08august
+to check in browser click [here](https://valkovbasiuk.github.io/gulp_modernizr/)
+
+# Lesson 10 & 11
+
+## Gulp
 
 - создать папку и в ней файл `index.html` с помощью консоли
 - сделать репу на гитхабе
@@ -9,3 +13,11 @@
 - установить пакет gulp
 - установить пакет gulp-sass
 - закинуть на GITHUB
+
+## Modernizr
+- Create simple svg fallback with Modernizr
+  - css way
+  - js way
+  
+## SVG animation
+- Create simple svg stroke animation on mouse hover
