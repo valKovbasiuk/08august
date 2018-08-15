@@ -1,0 +1,19 @@
+{
+  "crawl": false,
+  "customTests": [],
+  "dest": "/PATH/TO/modernizr-output.js",
+  "tests": [
+    "svg",
+    [
+      "cssgrid",
+      "cssgridlegacy"
+    ],
+    "flexbox",
+    "svgasimg",
+    "inlinesvg"
+  ],
+  "options": [
+    "setClasses"
+  ],
+  "uglify": true
+}

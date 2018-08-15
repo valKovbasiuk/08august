@@ -9,18 +9,18 @@ gulp.task("sass", function() {
     .pipe(sass()
     .on("error", sass.logError)
   )
-    .pipe(gulp.dest("./app/css"))
+    .pipe(gulp.dest("./docs/css"))
     .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task("serv", function() {
   browserSync.init({
     server: {
-      baseDir: "./app"
+      baseDir: "./docs"
     },
     notify: false
   });
-  browserSync.watch("./app", browserSync.reload);
+  browserSync.watch("./docs", browserSync.reload);
 });
 
 // gulp.task('watch', function() {
