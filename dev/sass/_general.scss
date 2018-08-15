@@ -1,17 +1,22 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+}
+
+div {
+    border: 2px solid red;
+  display: block;
+  text-align: center;
 }
 
 body {
-    color: blue;
-}
-
-.flex {
-    display: flex;
-}
-
-.grid {
-    display: grid;
+  color: yellow;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+height: 100vh;
 }

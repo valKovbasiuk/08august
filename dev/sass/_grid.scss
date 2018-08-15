@@ -1,0 +1,13 @@
+div.grid {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+}
+
+html.cssgrid div.grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}

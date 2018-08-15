@@ -1,0 +1,12 @@
+div.flex {
+    height: 100px;
+    background-color: red;
+}
+
+
+html.flexbox div.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}

@@ -1,0 +1,12 @@
+
+div.svg {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-image: url("../img/apple.png");
+    background-color: red;
+}
+
+html.svg div.svg {
+    background: url("../img/apple-alt-solid.svg") center center no-repeat;
+  }

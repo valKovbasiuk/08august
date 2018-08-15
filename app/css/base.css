@@ -1,28 +1,50 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0; }
+  padding: 10px;
+  margin: 10px; }
+
+div {
+  border: 2px solid red;
+  display: block;
+  text-align: center; }
 
 body {
-  color: blue; }
-
-.flex {
-  display: flex; }
-
-.grid {
-  display: grid; }
-
-body {
+  color: yellow;
   margin: 0;
   padding: 0;
-  font-size: 20px; }
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+div.flex {
+  height: 100px;
+  background-color: red; }
+
+html.flexbox div.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green; }
+
+div.grid {
+  width: 100px;
+  height: 100px;
+  background-color: red; }
+
+html.cssgrid div.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: green; }
 
 div.svg {
   width: 100px;
   height: 100px;
-  background-size: 100px 100px;
-  background-color: green; }
+  background-size: contain;
+  background-image: url("../img/apple.png");
+  background-color: red; }
 
-.svg div.svg {
-  background-color: none;
-  background-image: url("../img/apple-alt-solid.svg"); }
+html.svg div.svg {
+  background: url("../img/apple-alt-solid.svg") center center no-repeat; }
