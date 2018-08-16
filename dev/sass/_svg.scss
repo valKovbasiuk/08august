@@ -1,12 +1,36 @@
 
-div.svg {
-    width: 100px;
+div.no-svg, div.svg {
+    width: 407px;
     height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: contain;
-    background-image: url("../img/apple.png");
+}
+
+div.no-svg {
+    background-image: url("../img/mailchimp.png");
     background-color: red;
 }
 
-html.svg div.svg {
-    background: url("../img/apple-alt-solid.svg") center center no-repeat;
+div.svg, svg {
+    margin: 0;
+    padding: 0;
+    width: unset;
+    background-image: none;
+}
+
+svg:hover path {
+    stroke: green;
+    stroke-width: 1px;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 1000;
+    fill: none;
+    animation: dash 5s ease-in-out infinite alternate;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 200;
+    }
   }
